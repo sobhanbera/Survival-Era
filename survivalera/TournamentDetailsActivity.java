@@ -381,7 +381,7 @@ public class TournamentDetailsActivity extends AppCompatActivity {
                             ActivityCompat.requestPermissions(TournamentDetailsActivity.this, new String[]{Manifest.permission.READ_SMS, Manifest.permission.RECEIVE_SMS}, 101);
                         }
 
-                        final String M_ID = "esRXFM67170330264023";
+                        final String M_ID = "xxxxxxxxxxxxxxxxxxxx";
                         final String customer_id = FirebaseAuth.getInstance().getUid();
                         final String order_id = UUID.randomUUID().toString().substring(0, 28);
                         final String url = "https://survivalera.000webhostapp.com/paytm/generateChecksum.php";
