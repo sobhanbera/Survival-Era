@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zProfileActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorGradientForGoldenEnd"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/boundary_fill_small"
+                app:srcCompat="@drawable/account_96px" />
+
+            <TextView
+                android:id="@+id/fullNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:fontFamily="@font/aclonica"
+                android:includeFontPadding="false"
+                android:text="@string/loading"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullNameTV"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:fontFamily="@font/aclonica"
+                android:includeFontPadding="false"
+                android:text="@string/loading"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/phoneTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/emailTV"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:fontFamily="@font/aclonica"
+                android:includeFontPadding="false"
+                android:text="@string/loading"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/paytm_assist_icon" />
+
+                    <TextView
+                        android:id="@+id/accountBalanceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="@string/loading"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/theWordBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/accountBalanceTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="Balance"
+                        android:textColor="@color/redCream"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/paytm_assist_icon" />
+
+                    <TextView
+                        android:id="@+id/accountBalanceCoinsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="@string/loading"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/theWordCoinBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/accountBalanceCoinsTv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="Coin Balance"
+                        android:textColor="@color/redCream"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="FullName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fullnameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/loading" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="UserName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ingameusernameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/loading" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEt"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aclonica"
+                    android:alpha="1"
+                    android:inputType="textEmailAddress"
+                    android:text="@string/loading" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/mobile_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phonenoEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aclonica"
+                    android:inputType="number"
+                    android:text="@string/loading" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/HVTV01"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorDark"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/HVTV02"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/HVTV03"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/HVTV04"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorGradientForGoldenStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/HVTV05"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorFor3rdSlide"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/HVTV06"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorFor4thSlide"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/enter_above_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/humanVerificationEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:fontFamily="@font/aclonica" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updateProfileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_pic_for_buttons"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/update" />
+            <TextView
+                android:id="@+id/wantToChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/want_to_change_password"
+                android:gravity="end"
+                android:layout_marginVertical="5dp"
+                android:textColor="@color/redCream"
+                android:textSize="15sp"
+                android:fontFamily="@font/aclonica"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/aboveTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="Achievments"
+                android:textColor="@color/colorGradientForGoldenEnd"
+                android:textSize="22dp"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_below="@+id/aboveTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/totalMatchPlayedTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aclonica"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/blueCream"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/theWordMatchPlayed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/totalMatchPlayedTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/match_played"
+                            android:textColor="@color/redCream"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/chickenDinnerTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aclonica"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/blueCream"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/theWordMatchWon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/chickenDinnerTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/chicken_dinner"
+                            android:textColor="@color/redCream"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/totalKillsTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aclonica"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/blueCream"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/theWordTotalKills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/totalKillsTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/total_kills"
+                            android:textColor="@color/redCream"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

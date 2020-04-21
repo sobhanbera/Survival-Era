@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:background="@color/white"
+    tools:context=".zAddMoneyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/rupeeIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rupee" />
+
+                <TextView
+                    android:id="@+id/amountOfRupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/rupeeIcon"
+                    android:text="124"
+                    android:textColor="@color/redCream"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/amountOfCoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/coinIcon"
+                    android:text="45655"
+                    android:textColor="@color/redCream"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/coinIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icons" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/border2"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center"
+                        android:text="@string/add_amount"
+                        android:textColor="@color/redCream"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/iceberg"
+                        android:paddingHorizontal="6dp"
+                        android:text="@string/add_money_to_your_account_it_is_the_must_to_register_in_any_tournament_you_cannot_play_in_any_tournament_without_adding_amount"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Enter Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/enteredAmountEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aclonica"
+                            android:inputType="number"
+                            android:text=""
+                            android:textColor="@color/blueCream" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/iceberg"
+                        android:text="@string/you_can_add_min_50_rs_and_max_5000_rs"
+                        android:textColor="@color/purpleCream" />
+
+                    <Button
+                        android:id="@+id/addMoneyBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/my_pic_for_buttons"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:text="@string/add_amount" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/border2"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center"
+                        android:text="Buy SE Coins"
+                        android:textColor="@color/redCream"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/boundary_fill_small"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="3dp"
+                        android:layout_marginBottom="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/buySECoins01"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="9999 SE"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="10 Rs."
+                                        android:textColor="@color/blueCream"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/buySECoins02"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="10000 SE"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="12 Rs."
+                                        android:textColor="@color/blueCream"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/buySECoins03"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="19999 SE"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="19 Rs."
+                                        android:textColor="@color/blueCream"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/buySECoins04"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="20000 SE"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="22 Rs."
+                                        android:textColor="@color/blueCream"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/buySECoins05"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginHorizontal="10dp"
+                                app:cardBackgroundColor="@color/colorGradientForGoldenStart"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="29999 SE"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="28 Rs."
+                                        android:textColor="@color/blueCream"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/border2"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center"
+                        android:text="@string/get_premium"
+                        android:textColor="@color/redCream"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/iceberg"
+                        android:paddingHorizontal="6dp"
+                        android:text="@string/you_can_also_buy_our_premium_of_survival_era_to_get_vip_access_of_survival_era_application"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <Button
+                            android:id="@+id/buyPremiumBtn"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="@drawable/my_pic_for_buttons"
+                            android:gravity="center"
+                            android:text="@string/details"
+                            tools:ignore="ButtonStyle" />
+
+                        <Button
+                            android:id="@+id/getDetailsOfPremiumBtn"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="@drawable/my_pic_for_buttons"
+                            android:gravity="center"
+                            android:text="@string/buy_premium"
+                            tools:ignore="ButtonStyle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/border2"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center"
+                        android:text="@string/support_the_developer"
+                        android:textColor="@color/redCream"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="25dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:id="@+id/textViewForDonationAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Donate 5 Rs."
+                                android:layout_gravity="center"
+                                android:layout_marginVertical="5dp"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <SeekBar
+                                android:id="@+id/seekBarForDonationAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:progress="3"
+                                android:paddingHorizontal="3dp"/>
+
+                            <!--                    <Button
+                                                    android:id="@+id/manuallyEnterAmountBTN"
+                                                    android:layout_width="200dp"
+                                                    android:layout_gravity="end"
+                                                    android:layout_marginHorizontal="10dp"
+                                                    android:layout_marginVertical="3dp"
+                                                    android:text="@string/enter_manual_amount"
+                                                    android:background="@color/colorGradientForGoldenStart"
+                                                    android:layout_height="wrap_content"/>-->
+
+                            <!--<EditText
+                                android:id="@+id/donateAmountET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/enter_any_amount_you_want_to_donate"
+                                android:layout_marginTop="20dp"
+                                android:inputType="number"
+                                tools:ignore="Autofill" />-->
+
+                            <!--<TextView
+                                android:id="@+id/donationAmountAdviceTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="@string/enter_any_amount_you_want_to_donate_to_the_creator"
+                                android:textColor="@color/black"
+                                tools:ignore="RtlHardcoded" />-->
+
+                            <Button
+                                android:id="@+id/donateAmountBTN"
+                                android:layout_width="210dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/my_pic_for_buttons"
+                                android:gravity="center"
+                                android:layout_marginVertical="5dp"
+                                android:layout_gravity="center"
+                                android:text="@string/support_the_developer"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
