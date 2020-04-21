@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000538</color>
+    <color name="colorPrimaryDark">#000520</color>
+    <color name="colorAccent">#FFA200</color>
+
+<!--
+    //User Created Colors...050031
+-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorDark02">#232323</color>
+    <color name="colorDark">#000538</color>
+    <color name="colorDarkNext">#000635</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#acacac</color>
+    <color name="colorGradientForGoldenStart">#FFDF00</color>
+    <color name="colorGradientForGoldenEnd">#FFA200</color>
+    <color name="transparentWhite">#CCCCCC</color>
+
+<!--
+    //Color For Slider background in mainActivity...00ddff  0099cc  33b5e5
+-->
+    <color name="colorFor1stSlide">#ffffff</color>
+    <color name="colorFor2ndSlide">#000000</color>
+    <color name="colorFor3rdSlide">#FF0000</color>
+    <color name="colorFor4thSlide">#00ddff</color>
+
+    <color name="red">#ff0000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="orange">#ff4500</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#00ff00</color>
+    <color name="black">#000000</color>
+    <color name="pink">#ff00ff</color>
+    <color name="grey">#bfbfbf</color>
+
+<!--
+    //Colors for loading Animations
+-->
+    <color name="first">#00FF00</color>
+    <color name="second">#FFA200</color>
+    <color name="third">#FF00F6</color>
+
+<!--
+    //dynamic colors
+-->
+    <color name="whiteSnowCream">#fffafa</color>
+    <color name="whiteBlueCream">#EAEFFF</color>
+    <color name="whiteBlueCream2">#B8C9FF</color>
+    <color name="whiteMintCream">#f5fffa</color>
+    <color name="whiteGreenCream">#E8FFE5</color>
+
+    <color name="redCream">#b91d47</color>
+    <color name="magentaCream">#FF3665</color>
+    <color name="blueCream">#4343FF</color>
+    <color name="blueCream2">#77FFEC</color>
+    <color name="greenCream">#4AFF4A</color>
+    <color name="purpleCream">#8F4EFF</color>
+    <color name="yellowCream">#FFFF49</color>
+    <color name="pinkCream">#FF47FF</color>
+
+    <color name="plumPurple">#FF8888</color>
+    <color name="thistlePurple">#d8bfd8</color>
+    <color name="lavenderPurple">#e6e6fa</color>
+    <color name="simplePurple">#9932cc</color>
+    <color name="simplePurple2e">#9400d3</color>
+
+    <color name="hotPinkCream">#ff69b4</color>
+    <color name="deepligthPinkCream">#FF30A0</color>
+    <color name="lightPinkCream">#ffb6c1</color>
+
+<!--
+    //DYNAMIC COLORS SET 2
+-->
+    <color name="zerothDynamicColor">#FF9191</color>
+    <color name="firstDynamicColor">#f7c59f</color>
+    <color name="secondDynamicColor">#7adccd</color>
+    <color name="thirdDynamicColor">#b8d7f5</color>
+    <color name="fourthDynamicColor">#FFFB7B</color>
+    <color name="fifthDynamicColor">#99FF7D</color>
+    <color name="sixthDynamicColor">#858FFF</color>
+    <color name="seventhDynamicColor">#FF9696</color>
+    <color name="eighthDynamicColor">#BB86FF</color>
+    <color name="ninethDynamicColor">#84FF6A</color>
+
+<!--
+   FIRST SET OF ROWS CARDS
+-->
+    <color name="series01">#1093a7</color>
+    <color name="series02">#24454c</color>
+    <color name="series03">#def2f3</color>
+    <color name="series04">#589ba4</color>
+    <color name="series05">#14d3f1</color>
+
+<!--
+   SECOND SET OF ROWS CARDS
+-->
+    <color name="series11">#222222</color>
+    <color name="series12">#C9FFE9</color>
+    <color name="series13">#eb6222</color>
+    <color name="series14">#eeeeee</color>
+    <color name="series15">#909090</color>
+    <color name="series16">#4d4d4d</color>
+
+    <color name="series21">#4177FF</color>
+    <color name="series22">#CFFEFF</color>
+    <color name="series23">#7344FF</color>
+    <color name="series24">#2D5EFF</color>
+
+    <color name="tcGuidesFirst">#24454c</color>
+    <color name="tcGuidesSecond">#1093a7</color>
+    <color name="tcGuidesThird">#14d3f1</color>
+
+    <color name="adobeXDBackground">#2C0B26</color>
+    <color name="adobeXDBackground2">#6E2060</color>
+
+
+</resources>
